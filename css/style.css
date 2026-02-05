@@ -1,6 +1,16 @@
 body {
   font-family: Georgia, serif;
-  margin: 40px;
+  background-color: #e0e0e0; /* delikatne tło całej strony */
+  display: flex;
+  justify-content: center; /* poziome wyśrodkowanie */
+  padding: 50px 0; /* odstęp od góry i dołu */
+}
+
+.container {
+  background-color: #fff; /* tło „kartki” */
+  padding: 30px 60px; /* wewnętrzny margines */
+  max-width: 800px; /* szerokość kartki */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* lekki cień dla efektu kartki */
   line-height: 1.6;
 }
 
