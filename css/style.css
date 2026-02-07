@@ -1,27 +1,35 @@
+:root {
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Jost", sans-serif;
+}
+
 /*Global*/
 
 body {
   font-family: Georgia, serif;
-  background-color: #e0e0e0; /* delikatne tło całej strony */
-  margin-bottom: 100px;
+  background-color: #e0e0e0;
+  padding-bottom: 100px;
   margin: 0;
 }
 
 .container {
-  background-color: #fff; /* tło „kartki” */
-  padding: 30px 60px; /* wewnętrzny margines */
-  max-width: 800px; /* szerokość kartki */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* lekki cień dla efektu kartki */
+  background-color: #fff;
+  padding: 30px 60px;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   line-height: 1.6;
   margin: 0 auto;
 }
 
 h1 {
+  font-family: var(--font-secondary);
   font-size: 32px;
 }
 
 h2 {
+  font-family: var(--font-secondary);
   font-size: 20px;
+  font-weight: 300;
   color: gray;
   margin-bottom: 30px;
 }
@@ -29,6 +37,8 @@ h2 {
 p {
   margin-bottom: 20px;
 }
+
+/*Splash*/
 
 .splash {
   position: relative;
@@ -51,11 +61,27 @@ p {
   position: relative;
   margin: auto;
   max-width: 80%;
-  /*color: var(--color-text-primary);
-  background-color: rgba(246, 248, 245, 0.5);*/
 }
 
 .splash-text {
   margin: 25px;
   text-align: center;
+}
+
+.splash h1 {
+  margin: 20px 110px 20px 110px;
+  font-family: var(--font-secondary);
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 80px;
+  letter-spacing: 0.1em;
+}
+
+.splash h2 {
+  margin: 24px 0;
+  font-family: var(--font-secondary);
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 52px;
+  color: #0a0a0f;
 }
