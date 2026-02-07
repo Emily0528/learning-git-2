@@ -1,11 +1,10 @@
-/*Globak*/
+/*Global*/
 
 body {
   font-family: Georgia, serif;
   background-color: #e0e0e0; /* delikatne tło całej strony */
-  display: flex;
-  justify-content: center; /* poziome wyśrodkowanie */
-  padding: 50px 0; /* odstęp od góry i dołu */
+  margin-bottom: 100px;
+  margin: 0;
 }
 
 .container {
@@ -14,6 +13,7 @@ body {
   max-width: 800px; /* szerokość kartki */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* lekki cień dla efektu kartki */
   line-height: 1.6;
+  margin: 0 auto;
 }
 
 h1 {
@@ -28,4 +28,34 @@ h2 {
 
 p {
   margin-bottom: 20px;
+}
+
+.splash {
+  position: relative;
+  min-height: 600px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.splash-start {
+  min-height: 700px;
+  background-image: url("https://i.postimg.cc/W4PCXYbj/pexels-karola-g-4248603.jpg");
+  background-position: top;
+  margin-bottom: 100px;
+}
+
+.splash-inner-start {
+  position: relative;
+  margin: auto;
+  max-width: 80%;
+  /*color: var(--color-text-primary);
+  background-color: rgba(246, 248, 245, 0.5);*/
+}
+
+.splash-text {
+  margin: 25px;
+  text-align: center;
 }
